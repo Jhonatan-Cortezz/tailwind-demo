@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo tailwind</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-poppins">
+  <header class="bg-gray-header h-[60px] w-screen flex items-center justify-between px-8 lg:px-[120px] lg:h-[110px]">
+    <a href="#" class="text-light-blue font-pacifico text-2xl lg:text-[40px]">Tailwind</a>
+
+    <nav class="absolute left-0 bottom-0 h-[calc(100vh_-_60px)] w-[calc(100vw_-_60px)] bg-gradient-to-tr from-light-blue to-dark-blue text-white lg:text-gray-text text-2xl font-semibold -translate-x-full transition-transform duration-700 ease-in-out lg:w-min
+    lg:relative lg:translate-x-0 lg:h-auto lg:bg-none"
+    id="nav">
+      <ul class="h-full w-full flex flex-col justify-center space-y-[60px] ml-[60px]
+        lg:flex-row lg:space-y-0 lg:justify-end lg:ml-0 lg:space-x-[90px]
+      ">
+        <li><a href="#"></a>Home</li>
+        <li><a href="#"></a>About</li>
+        <li><a href="#"></a>Services</li>
+        <li><a href="#"></a>Blog</li>
+        <li><a href="#"></a>Contact</li>
+      </ul>
+    </nav>
+
+    <button
+      class="w-8 h-6 flex flex-col items-center justify-center bg-white shadow-md px-[2px] py-1 rounded space-y-[4px] lg:hidden"
+      id="btn-hamburger"
+    >
+      <span class="h-[2px] w-full bg-[#6B7280]"></span>
+      <span class="h-[2px] w-full bg-[#6B7280]"></span>
+      <span class="h-[2px] w-full bg-[#6B7280]"></span>
+    </button>
+  </header>
+
+
+  <!-- contenido principal -->
+  <main class="my-8 lg:max-w-[1200px] mx-auto lg:my-[100px]">
+
+    <section class="max-w-[190px] mx-auto md:max-w-[300px] lg:flex lg:max-w-full lg:space-x-[100px]">
+      <img src="img/main-image.jpg" alt="">
+      <div class="flex justify-center items-center flex-col">
+        <h1 class="font-bold text-sm md:text-2xl text-center">Title</h1>
+        <p class="text-[8px] text-justify mt-2 md:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ullamcorper lectus nec elit congue ornare. Nullam tincidunt dolor est, a interdum mauris varius quis.</p>
+      </div>
+    </section>
+
+    <section class="grid grid-cols-2 md:grid-cols-3 mx-[30px] gap-y-[40px] gap-x-[30px] mt-8 lg:mx-0 lg:grid-cols-4 lg:mt-[75px]">
+      <article class="rounded-xl shadow-lg overflow-hidden">
+        <img src="img/homer-1.jpg" alt="homer" class="w-full">
+        <p class="text-[8px] md:text-base text-justify px-[20px] py-3">Lorem ipsum dolor sit amet, consectetur</p>
+      </article>
+
+      <article class="rounded-xl shadow-lg overflow-hidden">
+        <img src="img/homer-1.jpg" alt="homer" class="w-full">
+        <p class="text-[8px] md:text-base text-justify px-[20px] py-3">Lorem ipsum dolor sit amet, consectetur</p>
+      </article>
+
+      <article class="rounded-xl shadow-lg overflow-hidden">
+        <img src="img/homer-1.jpg" alt="homer" class="w-full">
+        <p class="text-[8px] md:text-base text-justify px-[20px] py-3">Lorem ipsum dolor sit amet, consectetur</p>
+      </article>
+
+      <article class="rounded-xl shadow-lg overflow-hidden">
+        <img src="img/homer-1.jpg" alt="homer" class="w-full">
+        <p class="text-[8px] md:text-base text-justify px-[20px] py-3">Lorem ipsum dolor sit amet, consectetur</p>
+      </article>
+
+      <article class="rounded-xl shadow-lg overflow-hidden">
+        <img src="img/homer-1.jpg" alt="homer" class="w-full">
+        <p class="text-[8px] md:text-base text-justify px-[20px] py-3">Lorem ipsum dolor sit amet, consectetur</p>
+      </article>
+
+      <article class="rounded-xl shadow-lg overflow-hidden">
+        <img src="img/homer-1.jpg" alt="homer" class="w-full">
+        <p class="text-[8px] md:text-base text-justify px-[20px] py-3">Lorem ipsum dolor sit amet, consectetur</p>
+      </article>
+
+      <article class="rounded-xl shadow-lg overflow-hidden">
+        <img src="img/homer-1.jpg" alt="homer" class="w-full">
+        <p class="text-[8px] md:text-base text-justify px-[20px] py-3">Lorem ipsum dolor sit amet, consectetur</p>
+      </article>
+
+      <article class="rounded-xl shadow-lg overflow-hidden">
+        <img src="img/homer-1.jpg" alt="homer" class="w-full">
+        <p class="text-[8px] md:text-base text-justify px-[20px] py-3">Lorem ipsum dolor sit amet, consectetur</p>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    const btn = document.querySelector('#btn-hamburger')
+    const nav = document.querySelector('#nav')
+
+    btn.addEventListener('click', () => {
+      nav.classList.toggle('-translate-x-full')
+    })
+
+  </script>
+</body>
+</html>
